@@ -6,8 +6,8 @@ import javax.swing.ImageIcon;
 
 public interface Gameconfig {
 	// 窗口大小
-	int length = 1200;
-	int width = 800;
+	int length = 800;
+	int width = 400;
 
 	// 加载背景图
 	Image bround= new ImageIcon("images/bround/Desert.jpg").getImage();

@@ -14,8 +14,8 @@ public class Player extends Thread implements Gameconfig {
 	static boolean left = false;
 	static boolean right = false;
 	//角色坐标
-	static int py_x = 50;
-	static int py_y = 346;
+	static int py_x = 0;
+	static int py_y = 0;
 	static boolean firstda = true;
 	// 角色的朝向 1,2分别代表左右(用来处理角色不移动时的朝向问题)
 	static int towards = 2;//默认朝向右
