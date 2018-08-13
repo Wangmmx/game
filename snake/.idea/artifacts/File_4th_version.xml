@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="File_4th_version">
+    <output-path>$PROJECT_DIR$/.build/artifacts/File_4th_version</output-path>
+    <root id="root">
+      <element id="archive" name="File_4th_version.jar">
+        <element id="module-output" name="File_4th_version" />
+      </element>
+    </root>
+  </artifact>
+</component>

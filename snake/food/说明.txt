@@ -1,0 +1,5 @@
+green_apple : + 10
+red_apple : + 50
+drink : + 30
+hamburger: + 40
+hotdog : +20
