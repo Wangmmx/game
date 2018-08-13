@@ -9,12 +9,6 @@ public class MainWindow extends JFrame{
 	private static final long serialVersionUID = -1877974685325498861L;
 	private Font f = new Font("微软雅黑",Font.PLAIN,15);
 	private Font f2 = new Font("微软雅黑",Font.PLAIN,12);
-	private JRadioButtonMenuItem speedItems[];
-	private ButtonGroup speedGroup;
-	private JRadioButtonMenuItem headItems[]; 
-	private ButtonGroup headGroup;
-	private JRadioButtonMenuItem bodyItems[];
-	private ButtonGroup bodyGroup;
 	private ImageIcon backgroundImage;
 	private JLabel label;
 	JPanel imagePanel;
@@ -30,7 +24,7 @@ public class MainWindow extends JFrame{
 	    setLocationRelativeTo(null);
 	    
 	    //添加背景图片
-	    backgroundImage = new ImageIcon("background//sky2.jpg");
+	    backgroundImage = new ImageIcon("background/black.jpg");
 	    backgroundImage.setImage(backgroundImage.getImage().getScaledInstance(1000,540,Image.SCALE_SMOOTH));
         label = new JLabel(backgroundImage);  
         label.setBounds(0,0, this.getWidth(), this.getHeight());   
