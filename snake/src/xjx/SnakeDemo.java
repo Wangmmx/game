@@ -94,7 +94,7 @@ public class SnakeDemo extends JComponent{
 	private int countsecond = 5;//每种食物产生5秒后消失或者换位置
 	private boolean ifcount = false;
 	
-	public static boolean If_remove = false;//是否移除网格线
+	public static boolean If_remove = true;//是否移除网格线
 	
 	private boolean hit_flag = false;
 	
@@ -481,24 +481,7 @@ public class SnakeDemo extends JComponent{
 		g.setPaint(new GradientPaint(115,135,Color.CYAN,230,135,Color.MAGENTA,true));
 		g.setStroke( new BasicStroke(4,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL));
 		g.drawRect(2, 7, 887, 469);//+400
-		
-		if(!If_remove)
-		{
-			//网格线
-			for(int i = 1;i < 40;i++)
-			{
-//				g.setStroke( new BasicStroke(1,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL));//实线
-				g.setStroke( new BasicStroke(1f, BasicStroke.CAP_BUTT,
-                        BasicStroke.JOIN_ROUND, 3.5f, new float[] { 15, 10, },
-                        0f));//虚线
-				g.setColor(Color.black);
-				g.drawLine(5+i*22,9,5+i*22,472);
-				if(i <= 20)
-				{
-					g.drawLine(4,10+i*22,887,10+i*22);//+400
-				}
-			}
-		}
+
 	}
 	
 	public void ProduceFood(){
