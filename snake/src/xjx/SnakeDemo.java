@@ -86,7 +86,7 @@ public class SnakeDemo extends JComponent{
 	private int[] point_list = new int[6];
 	public ImageIcon snakehead;
 	public ImageIcon snakebody;
-	private ImageIcon[] food = new ImageIcon[foodkind];
+	private ImageIcon food;
 	public JLabel head_label;
 	public JLabel[] body_label = new JLabel[MAX_SIZE];
 	private JLabel food_label;//每次产生一种食物
@@ -183,7 +183,7 @@ public class SnakeDemo extends JComponent{
 	    //初始化头部坐标
 	    ProduceRandom();
 	    head = new Tile(randomx,randomy);
-	    snakehead = new ImageIcon("head//head.png");
+	    snakehead = new ImageIcon("head/head.png");
 	    snakehead.setImage(snakehead.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
         head_label = new JLabel(snakehead); 
         add(head_label);
@@ -191,7 +191,7 @@ public class SnakeDemo extends JComponent{
         head_label.setOpaque(false);
         
         //初始化身体所有节点
-        snakebody = new ImageIcon("body//body.png");
+        snakebody = new ImageIcon("body/1.png");
 		snakebody.setImage(snakebody.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
 		for(int i = 0; i < MAX_SIZE;i++)
 		{
@@ -201,32 +201,19 @@ public class SnakeDemo extends JComponent{
 		}
 		
 		//初始化食物
-		food[0] = new ImageIcon("food//hotdog.png");
-	    food[0].setImage(food[0].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
-	    food[1] = new ImageIcon("food//hamburger.png");
-	    food[1].setImage(food[1].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
-	    food[2] = new ImageIcon("food//drink.png");
-	    food[2].setImage(food[2].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
-	    food[3] = new ImageIcon("food//green_apple.png");
-	    food[3].setImage(food[3].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
-	    food[4] = new ImageIcon("food//red_apple.png");
-	    food[4].setImage(food[4].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
-	    food[5] = new ImageIcon("food//weapon.png");
-	    food[5].setImage(food[5].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
+		food = new ImageIcon("food/food.png");
+	    food.setImage(food.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
+
 	    
 
 	    
 	    //初始化各食物对应的得分
 	    point_list[0] = 20;
-	    point_list[1] = 40;
-	    point_list[2] = 30;
-	    point_list[3] = 10;
-	    point_list[4] = 30;
-	    point_list[5] = 0;
+
 	    
 	    
 	    //初始化所有砖块
-	    brickIcon = new ImageIcon("1.png");
+	    brickIcon = new ImageIcon("brick.png");
 	    brickIcon.setImage(brickIcon.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
 		for(int i = 0; i < 40;i++)
 		{
@@ -436,39 +423,14 @@ public class SnakeDemo extends JComponent{
 		Random rand = new Random();
 		double x;
 		x = rand.nextDouble();
-		
-		if(x >= 0 && x <0.1)
+
+		if(x >= 0 && x <1)
 		{
-			food_label = new JLabel(food[1]);
+			food_label = new JLabel(food);
 			foodtag = 1;
 		}
-		else if(x >= 0.1 && x <0.25)
-		{
-			food_label = new JLabel(food[2]);
-			foodtag = 2;
-		}
-		else if(x >= 0.25 && x <0.5)
-		{
-			food_label = new JLabel(food[0]);
-			foodtag = 0;
-		}
-		else if(x >= 0.5 && x <0.8)
-		{
-			food_label = new JLabel(food[3]);
-			foodtag = 3;
-		}
-		else if(x >= 0.8 && x <0.95)
-		{
-			food_label = new JLabel(food[4]);
-			foodtag = 4;
-		}
-		else if(x >= 0.95 && x <1)
-		{
-			food_label = new JLabel(food[5]);
-			foodtag = 5;
-		}
-		
-	} 
+
+	}
 	
 	public void ProduceRandom(){
 		boolean flag = true;
