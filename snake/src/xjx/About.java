@@ -53,7 +53,7 @@ public class About extends JDialog {
 	private JLabel label;
     public About() {
         setTitle("关于");//设置窗体标题
-        Image img=Toolkit.getDefaultToolkit().getImage("title.png");//窗口图标
+        Image img=Toolkit.getDefaultToolkit().getImage("ico.png");//窗口图标
         setIconImage(img);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setModal(true);//设置为模态窗口
@@ -75,7 +75,7 @@ public class About extends JDialog {
     	J1.setOpaque(false);//背景透明
     	shadePanel.add(J1);
     	J1.setBounds(10, 10, 400, 180);
-    	icon = new ImageIcon("title.png");
+    	icon = new ImageIcon("ico.png");
     	icon.setImage(icon.getImage().getScaledInstance(120,120,Image.SCALE_SMOOTH));//保持图片的清晰
     	label = new JLabel(icon);
     	shadePanel.add(label);

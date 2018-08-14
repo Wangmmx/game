@@ -230,7 +230,7 @@ public class SnakeDemo extends JComponent{
 	    
 	    
 	    //初始化所有砖块
-	    brickIcon = new ImageIcon("brick.png");
+	    brickIcon = new ImageIcon("1.png");
 	    brickIcon.setImage(brickIcon.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
 		for(int i = 0; i < 40;i++)
 		{

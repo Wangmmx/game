@@ -9,7 +9,7 @@ public class Help extends JDialog {
 	
     public Help() {
         setTitle("游戏规则说明");//设置窗体标题
-        Image img=Toolkit.getDefaultToolkit().getImage("title.png");//窗口图标
+        Image img=Toolkit.getDefaultToolkit().getImage("ico.png");//窗口图标
         setIconImage(img);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setModal(true);//设置为模态窗口

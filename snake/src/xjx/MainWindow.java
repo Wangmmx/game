@@ -14,7 +14,7 @@ public class MainWindow extends JFrame{
 	JPanel imagePanel;
 	
 	public MainWindow(){
-		Image img = Toolkit.getDefaultToolkit().getImage("title.png");//窗口图标
+		Image img = Toolkit.getDefaultToolkit().getImage("ico.png");//窗口图标
 		setIconImage(img);
 	    setTitle("Gift for KMD By WM");
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,10 +26,10 @@ public class MainWindow extends JFrame{
 	    //添加背景图片
 	    backgroundImage = new ImageIcon("background/black.jpg");
 	    backgroundImage.setImage(backgroundImage.getImage().getScaledInstance(1000,540,Image.SCALE_SMOOTH));
-        label = new JLabel(backgroundImage);  
-        label.setBounds(0,0, this.getWidth(), this.getHeight());   
-        imagePanel = (JPanel) this.getContentPane();  
-        imagePanel.setOpaque(false);  
+        label = new JLabel(backgroundImage);
+        label.setBounds(0,0, this.getWidth(), this.getHeight());
+        imagePanel = (JPanel) this.getContentPane();
+        imagePanel.setOpaque(false);
         this.getLayeredPane().add(label, new Integer(Integer.MIN_VALUE));
         
         //菜单栏
