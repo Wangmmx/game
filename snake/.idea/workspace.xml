@@ -53,8 +53,8 @@
       <file leaf-file-name="SnakeDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xjx/SnakeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="426" column="26" lean-forward="true" selection-start-line="426" selection-start-column="26" selection-end-line="426" selection-end-column="26" />
+            <state relative-caret-position="177">
+              <caret line="415" column="22" lean-forward="false" selection-start-line="415" selection-start-column="22" selection-end-line="415" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +104,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
-    <option name="y" value="94" />
+    <option name="x" value="83" />
+    <option name="y" value="26" />
     <option name="width" value="1750" />
     <option name="height" value="918" />
   </component>
@@ -348,15 +348,15 @@
       <workItem from="1533877165922" duration="144000" />
       <workItem from="1533877410271" duration="1944000" />
       <workItem from="1534129077303" duration="663000" />
-      <workItem from="1534215805617" duration="8568000" />
+      <workItem from="1534215805617" duration="8971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17949000" />
+    <option name="totallyTimeSpent" value="18352000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="94" width="1750" height="918" extended-state="0" />
+    <frame x="83" y="26" width="1750" height="918" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -367,7 +367,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38107753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19973719" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -708,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xjx/SnakeDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="426" column="26" lean-forward="true" selection-start-line="426" selection-start-column="26" selection-end-line="426" selection-end-column="26" />
+        <state relative-caret-position="177">
+          <caret line="415" column="22" lean-forward="false" selection-start-line="415" selection-start-column="22" selection-end-line="415" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

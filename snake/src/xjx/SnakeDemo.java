@@ -413,7 +413,9 @@ public class SnakeDemo extends JComponent{
 		first_launch = true;
 		
 		//墙
-		g.setPaint(new GradientPaint(115,135,Color.CYAN,230,135,Color.MAGENTA,true));
+		//这是围墙 太丑了 记得改
+		//g.setPaint(new GradientPaint(115,135,Color.CYAN,230,135,Color.MAGENTA,true));
+
 		g.setStroke( new BasicStroke(4,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL));
 		g.drawRect(2, 7, 887, 469);//+400
 
