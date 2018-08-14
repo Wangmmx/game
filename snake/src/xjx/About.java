@@ -37,7 +37,7 @@ class ShadePanel extends JPanel {
         int width = getWidth();// 获取组件大小
         int height = getHeight();
         // 创建填充模式对象
-        GradientPaint paint = new GradientPaint(0, 0, Color.CYAN, 0, height,Color.MAGENTA);//实现颜色渐变
+        GradientPaint paint = new GradientPaint(0, 0, Color.GRAY, 0, height,Color.GRAY);//实现颜色渐变
         //GradientPaint paint = new GradientPaint(0, 0, Color.red, 0, height,Color.blue);
         g.setPaint(paint);// 设置绘图对象的填充模式
         g.fillRect(0, 0, width, height);// 绘制矩形填充控件界面
