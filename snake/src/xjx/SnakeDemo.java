@@ -104,9 +104,7 @@ public class SnakeDemo extends JComponent{
 	private int brick_amount = 0;
 	private int brick_history_amount = 0;
 	private boolean hit_barrier = false; 
-	
-	private int bullet = 0;//记录子弹数量
-	private ImageIcon fireIcon;
+
 	private JLabel fire_label;
 	private Tile fire_position = new Tile(0,0);
 	private Tile target;
@@ -216,9 +214,7 @@ public class SnakeDemo extends JComponent{
 	    food[5] = new ImageIcon("food//weapon.png");
 	    food[5].setImage(food[5].getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
 	    
-	    fireIcon = new ImageIcon("fire.png");//射击子弹时产生的火焰图标
-	    fireIcon.setImage(fireIcon.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));//保持图片的清晰
-	    fire_label = new JLabel(fireIcon);
+
 	    
 	    //初始化各食物对应的得分
 	    point_list[0] = 20;
@@ -293,55 +289,7 @@ public class SnakeDemo extends JComponent{
 	    				ifcount = true;
 	    			}
 	    		}
-	    		
-	    		if(e.isShiftDown())
-	    		{
-	    			if(!startfire && bullet > 0)
-	    			{
-	    				System.out.println("Fire a bullet");
-		     			target = Search(head,current_direction);
-		     			if(current_direction == "L")
-	     				{
-	     					fire_position.x = head.x - 22;
-	     					fire_position.y = head.y;
-	     				}
-	     				if(current_direction == "R")
-	     				{
-	     					fire_position.x = head.x + 22;
-	     					fire_position.y = head.y;
-	     				}
-	     				if(current_direction == "U")
-	     				{
-	     					fire_position.x = head.x;
-	     					fire_position.y = head.y - 22;
-	     				}
-	     				if(current_direction == "D")
-	     				{
-	     					fire_position.x = head.x;
-	     					fire_position.y = head.y + 22;
-	     				}
-	     				
-	     				if(target.x != -1 && target.y != -1)
-	     				{
-	     					targetx = obstacle[target.x].barrier[target.y].x;
-	     					targety = obstacle[target.x].barrier[target.y].y;
-	     				}
-	     				target_ptr = 0;
-						for(int i = 0;i < target.x;i++)
-						{
-							target_ptr += obstacle[i].length;
-						}
-						target_ptr += target.y;
-						
-		     			running = current_direction;
-		     			add(fire_label);
-		     			fire_label.setBounds(fire_position.x, fire_position.y, 20, 20);
-		     			fire_label.setVisible(true);
-		     			startfire = true;
-		     			bullet--;
-		     			Weapon.setText("" + bullet);
-	    			}
-	    		}
+
 	    	}
 		});
 		
@@ -945,12 +893,7 @@ public class SnakeDemo extends JComponent{
 								
 								Length.setText("" + (body_length+1) );//刷新长度
 								score += point_list[foodtag];
-								if(foodtag == 5)//吃到的是子弹
-								{
-									bullet++;
-									Weapon.setText("" + bullet);
-								}
-								
+
 								Score.setText("" + score);//刷新得分
 								new AePlayWave("eat.wav").start();
 							}
@@ -1170,7 +1113,6 @@ public class SnakeDemo extends JComponent{
 	
 	public void Reset(){
 		startfire = false;
-		fire_label.setVisible(false);
 		hit_barrier = false;
 		hit_flag = false;
 		remove(food_label);//去掉被吃掉的食物
@@ -1220,7 +1162,6 @@ public class SnakeDemo extends JComponent{
 		countsecond = 5;
 		Time2.setText("5");
 		ifcount = true;
-		bullet = 0;
 		Weapon.setText("0");
 		
 		System.out.println("Start again");
