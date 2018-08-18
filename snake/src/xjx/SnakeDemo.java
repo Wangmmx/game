@@ -40,7 +40,6 @@ public class SnakeDemo extends JComponent{
 	private JLabel label2 = new JLabel("所花时间：");
 	private JLabel label3 = new JLabel("当前得分：");
 	private JLabel label4 = new JLabel("剩余时间：");
-	private JLabel label5 = new JLabel("剩余子弹：");
 	private JLabel Length = new JLabel("1");
 	private JLabel Score = new JLabel("0");
 	private JLabel Time = new JLabel("");
@@ -49,7 +48,7 @@ public class SnakeDemo extends JComponent{
 	private Font f = new Font("微软雅黑",Font.PLAIN,15);
 	private JPanel p = new JPanel();
 	
-	public final int MAX_SIZE = 400;//蛇身体最长为400节
+	public final int MAX_SIZE = 200;//蛇身体最长为400节
 	private Tile temp = new Tile(0,0);
 	private Tile temp2 = new Tile(0,0);
 	private Tile head = new Tile(0,0);
@@ -79,8 +78,7 @@ public class SnakeDemo extends JComponent{
 	private Calendar Cld;
 	private int MI,MI2,MI3;
 	private int SS,SS2,SS3;
-	
-	private final int foodkind = 6;
+
 	private int score = 0;
 	private int foodtag;
 	private int[] point_list = new int[6];
@@ -94,7 +92,7 @@ public class SnakeDemo extends JComponent{
 	private int countsecond = 5;//每种食物产生5秒后消失或者换位置
 	private boolean ifcount = false;
 	
-	public static boolean If_remove = true;//是否移除网格线
+	public static boolean If_remove = false;//是否移除网格线
 	
 	private boolean hit_flag = false;
 	
@@ -112,7 +110,9 @@ public class SnakeDemo extends JComponent{
 	private String running;
 	private int targetx,targety;
 	private int target_ptr;
-	
+
+
+
 	public SnakeDemo(){
 		
 		String lookAndFeel =UIManager.getSystemLookAndFeelClassName();
@@ -130,45 +130,38 @@ public class SnakeDemo extends JComponent{
 		
 		//布局
 		add(label);
-	    label.setBounds(900, 10, 80, 20);
+	    label.setBounds(910, 10, 80, 20);
 	    label.setFont(f);
 	    add(Length);
-	    Length.setBounds(900, 35, 80, 20);
+	    Length.setBounds(910, 35, 80, 20);
 	    Length.setFont(f);
 	    add(label2);
-	    label2.setBounds(900, 70, 80, 20);
+	    label2.setBounds(910, 70, 80, 20);
 	    label2.setFont(f);
 	    add(Time);
-	    Time.setBounds(900, 95, 80, 20);
+	    Time.setBounds(910, 95, 80, 20);
 	    Time.setFont(f);    
 	    add(label3);
-	    label3.setBounds(900, 130, 80, 20);
+	    label3.setBounds(910, 130, 80, 20);
 	    label3.setFont(f);
 	    add(Score);
-	    Score.setBounds(900, 155, 80, 20);
+	    Score.setBounds(910, 155, 80, 20);
 	    Score.setFont(f);
 	    add(p);
-	    p.setBounds(898, 200, 93, 1);
+	    p.setBounds(908, 200, 93, 1);
 	    p.setBorder(BorderFactory.createLineBorder(Color.white));
 	    add(label4);
-	    label4.setBounds(900, 210, 80, 20);
+	    label4.setBounds(910, 210, 80, 20);
 	    label4.setFont(f);
 	    add(Time2);
-	    Time2.setBounds(900, 235, 80, 20);
+	    Time2.setBounds(910, 235, 80, 20);
 	    Time2.setFont(f);
-	    add(label5);
-	    label5.setBounds(900, 270, 80, 20);
-	    label5.setFont(f);
-	    add(Weapon);
-	    Weapon.setBounds(900, 295, 80, 20);
-	    Weapon.setFont(f); 
 	    
 	    //字体颜色，为了便于分辨，设为白色
 	    label.setForeground(Color.white);
 	    label2.setForeground(Color.white);
 	    label3.setForeground(Color.white);
 	    label4.setForeground(Color.white);
-	    label5.setForeground(Color.white);
 	    Length.setForeground(Color.white);
 		Score.setForeground(Color.white);
 		Time.setForeground(Color.white);
@@ -338,9 +331,10 @@ public class SnakeDemo extends JComponent{
 		
 		new Timer();//开始计时
 		new Countdown();//开始倒计时
-		Thread3();
 		setFocusable(true);
 	}
+
+
 	
 	public void paintComponent(Graphics g1){
 		super.paintComponent(g1);
@@ -416,7 +410,27 @@ public class SnakeDemo extends JComponent{
 		g.setPaint(new GradientPaint(115,135,Color.YELLOW,230,135,Color.YELLOW,true));
 
 		g.setStroke( new BasicStroke(4,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL));
-		g.drawRect(2, 7, 887, 469);//+400
+		g.drawRect(2, 7, 900, 483);//+400
+
+		if(!If_remove)
+		{
+			//网格线
+			for(int i = 1;i < 28;i++)
+			{
+				g.setStroke( new BasicStroke(1,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL));//实线
+//				g.setStroke( new BasicStroke(1f, BasicStroke.CAP_BUTT,
+//						BasicStroke.JOIN_ROUND, 3.5f, new float[] { 15, 10, },
+//						0f));//虚线
+				g.setColor(Color.white);
+				g.drawLine(5+i*32,9,5+i*32,490);
+				if(i < 15)
+				{
+					g.drawLine(4,10+i*32,900,10+i*32);//+400
+				}
+			}
+		}
+
+
 
 	}
 	
@@ -436,8 +450,8 @@ public class SnakeDemo extends JComponent{
 	public void ProduceRandom(){
 		boolean flag = true;
 		Random rand = new Random();
-		randomx = (rand.nextInt(39) + 1) * 22 + 7;
-		randomy = (rand.nextInt(20) + 1) *22 + 12;
+		randomx = (rand.nextInt(28) + 1) * 32 + 7 ;
+		randomy = (rand.nextInt(15) + 1) *32 + 12;
 		while(flag)
 		{
 			if(body_length == 0)
@@ -450,8 +464,8 @@ public class SnakeDemo extends JComponent{
 						if( (randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
 							(head.x == randomx  && head.y == randomy ) )
 						{
-							randomx = (rand.nextInt(39) + 1) * 22 + 7;
-							randomy = (rand.nextInt(20) + 1) *22 + 12;
+							randomx = (rand.nextInt(28) + 1) * 32 + 7;
+							randomy = (rand.nextInt(15) + 1) *32 + 12;
 							flag = true;
 							break;
 						}
@@ -478,8 +492,8 @@ public class SnakeDemo extends JComponent{
 								(randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
 								(head.x == randomx && head.y == randomx) )
 							{
-								randomx = (rand.nextInt(39) + 1) * 22 + 7;
-								randomy = (rand.nextInt(20) + 1) *22 + 12;
+								randomx = (rand.nextInt(28) + 1) * 32 + 7;
+								randomy = (rand.nextInt(15) + 1) *32 + 12;
 								flag = true;
 								break;
 							}
@@ -511,8 +525,8 @@ public class SnakeDemo extends JComponent{
 			length = rand.nextInt(4) + 5;//墙的长度从5到8随机
 			brick_amount += length;
 			tag = rand.nextInt(2);//0和1
-			barrierx = (rand.nextInt(39) + 1) * 22 + 7;//每堵墙起始砖块的横坐标
-			barriery = (rand.nextInt(20) + 1) *22 + 12;//每堵墙起始砖块的纵坐标
+			barrierx = (rand.nextInt(28) + 1) * 32 + 7;//每堵墙起始砖块的横坐标
+			barriery = (rand.nextInt(15) + 1) *32 + 12;//每堵墙起始砖块的纵坐标
 			
 			obstacle[i] = new Barrier(length);
 			
@@ -520,13 +534,13 @@ public class SnakeDemo extends JComponent{
 			{
 				if(tag == 0)
 				{
-					obstacle[i].barrier[j].x = barrierx + j * 22;
+					obstacle[i].barrier[j].x = barrierx + j * 32;
 					obstacle[i].barrier[j].y = barriery;
 				}
 				else if(tag == 1)
 				{
 					obstacle[i].barrier[j].x = barrierx;
-					obstacle[i].barrier[j].y = barriery + j * 22;
+					obstacle[i].barrier[j].y = barriery + j * 32;
 				}
 //				System.out.println(obstacle[i].barrier[j].x + "   " + obstacle[i].barrier[j].y);
 			}
@@ -543,22 +557,22 @@ public class SnakeDemo extends JComponent{
 						//保证身体节点，头部，食物都不能和砖块重合，而且保证网格空间能够容纳下这堵墙
 						if( (randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
 							(head.x == obstacle[i].barrier[j].x && head.y == obstacle[i].barrier[j].y) ||
-							(tag == 0 && obstacle[i].barrier[0].x > 39 * 22 + 7 - (length - 1) * 22) || 
-							(tag == 1 && obstacle[i].barrier[0].y > 20 * 22 + 12 - (length - 1) * 22) )
+							(tag == 0 && obstacle[i].barrier[0].x > 28 * 32 + 7 - (length - 1) * 32) ||
+							(tag == 1 && obstacle[i].barrier[0].y > 15 * 32 + 12 - (length - 1) * 32) )
 						{
-							barrierx = (rand.nextInt(39) + 1) * 22 + 7;
-							barriery = (rand.nextInt(20) + 1) *22 + 12;
+							barrierx = (rand.nextInt(28) + 1) * 32 + 7;
+							barriery = (rand.nextInt(15) + 1) *32 + 12;
 							for(int jj = 0;jj < length;jj++)
 							{
 								if(tag == 0)
 								{
-									obstacle[i].barrier[jj].x = barrierx + jj * 22;
+									obstacle[i].barrier[jj].x = barrierx + jj * 32;
 									obstacle[i].barrier[jj].y = barriery;
 								}
 								else if(tag == 1)
 								{
 									obstacle[i].barrier[jj].x = barrierx;
-									obstacle[i].barrier[jj].y = barriery + jj * 22;
+									obstacle[i].barrier[jj].y = barriery + jj * 32;
 								}
 //								System.out.println(obstacle[i].barrier[jj].x + "   " + obstacle[i].barrier[jj].y);
 							}
@@ -586,22 +600,22 @@ public class SnakeDemo extends JComponent{
 							if( (body[k].x == obstacle[i].barrier[j].x && body[k].y == obstacle[i].barrier[j].y) || 
 								(randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
 								(head.x == obstacle[i].barrier[j].x && head.y == obstacle[i].barrier[j].y) ||
-								(tag == 0 && obstacle[i].barrier[0].x > 39 * 22 + 7 - (length - 1) * 22) || 
-								(tag == 1 && obstacle[i].barrier[0].y > 20 * 22 + 12 - (length - 1) * 22) )
+								(tag == 0 && obstacle[i].barrier[0].x > 28 * 32 + 7 - (length - 1) * 32) ||
+								(tag == 1 && obstacle[i].barrier[0].y > 15 * 32 + 12 - (length - 1) * 32) )
 							{
-								barrierx = (rand.nextInt(39) + 1) * 22 + 7;
-								barriery = (rand.nextInt(20) + 1) *22 + 12;
+								barrierx = (rand.nextInt(28) + 1) * 32 + 7;
+								barriery = (rand.nextInt(15) + 1) *32 + 12;
 								for(int jj = 0;jj < length;jj++)
 								{
 									if(tag == 0)
 									{
-										obstacle[i].barrier[jj].x = barrierx + jj * 22;
+										obstacle[i].barrier[jj].x = barrierx + jj * 32;
 										obstacle[i].barrier[jj].y = barriery;
 									}
 									else if(tag == 1)
 									{
 										obstacle[i].barrier[jj].x = barrierx;
-										obstacle[i].barrier[jj].y = barriery + jj * 22;
+										obstacle[i].barrier[jj].y = barriery + jj * 32;
 									}
 //									System.out.println(obstacle[i].barrier[jj].x + "   " + obstacle[i].barrier[jj].y);
 								}
@@ -797,7 +811,7 @@ public class SnakeDemo extends JComponent{
 						//头部移动
 						if(direction == "L")
 						{
-							head.x -= 22;
+							head.x -= 32;
 							if(head.x < 7)
 							{
 								hit_flag = true;
@@ -805,7 +819,7 @@ public class SnakeDemo extends JComponent{
 						}
 						if(direction == "R")
 						{
-							head.x += 22;
+							head.x += 32;
 							if(head.x > 885)
 							{
 								hit_flag = true;
@@ -813,7 +827,7 @@ public class SnakeDemo extends JComponent{
 						}
 						if(direction == "U")
 						{
-							head.y -= 22;
+							head.y -= 32;
 							if(head.y < 12)
 							{
 								hit_flag = true;
@@ -821,7 +835,7 @@ public class SnakeDemo extends JComponent{
 						}
 						if(direction == "D")
 						{
-							head.y += 22;
+							head.y += 32;
 							if(head.y > 472)
 							{
 								hit_flag = true;
@@ -907,7 +921,7 @@ public class SnakeDemo extends JComponent{
 							for(int j = 0;j < obstacle[i].length;j++)
 							{
 								obstacle_label[ptr].setVisible(true);
-								obstacle_label[ptr++].setBounds(obstacle[i].barrier[j].x,obstacle[i].barrier[j].y , 20, 20);
+								obstacle_label[ptr++].setBounds(obstacle[i].barrier[j].x,obstacle[i].barrier[j].y , 30, 30);
 							}
 						}
 						
@@ -923,156 +937,7 @@ public class SnakeDemo extends JComponent{
 		
 		run2.start();
 	}
-	
-	public void Thread3(){
-		run3 = new Thread() {
-			public void run() {
-				while (true) 
-				{
-					try {
-						Thread.sleep(80);//每隔80毫秒刷新一次，实现火焰快速移动，至少要比蛇头移动的快
- 					} catch (InterruptedException ex) {
-						ex.printStackTrace();
-					}
-					
-					if(isrun && !pause && startfire)
-					{
-						
-						if(running == "L")
-						{
-							if(target.x == -1 && target.y == -1)//表明火花前进路上没有障碍物
-							{
-								if(fire_position.x > -10)//移到屏幕外即可
-								{
-									fire_position.x -= 22;
-								}
-								else
-								{
-									startfire = false;
-								}
-							}
-							else
-							{
-								if(fire_position.x > targetx)
-								{
-									fire_position.x -= 22;
-								}
-								else if(fire_position.x == targetx)//到达目标地点
-								{
-									new AePlayWave("explode.wav").start();
-									obstacle_label[target_ptr].setVisible(false);
-									obstacle[target.x].barrier[target.y].x = 1500;
-									obstacle[target.x].barrier[target.y].y = 1500;
-									fire_label.setVisible(false);
-									
-									startfire = false;
-								}
-							}
-						}
-						if(running == "R")
-						{
-							if(target.x == -1 && target.y == -1)//表明火花前进路上没有障碍物
-							{
-								if(fire_position.x < 1020)//移到屏幕外即可
-								{
-									fire_position.x += 22;
-								}
-								else
-								{
-									startfire = false;
-								}
-							}
-							else
-							{
-								if(fire_position.x < targetx)
-								{
-									fire_position.x += 22;
-								}
-								else if(fire_position.x == targetx)//到达目标地点
-								{
-									new AePlayWave("explode.wav").start();
-									obstacle_label[target_ptr].setVisible(false);
-									obstacle[target.x].barrier[target.y].x = 1500;
-									obstacle[target.x].barrier[target.y].y = 1500;
-									fire_label.setVisible(false);
-									
-									startfire = false;
-								}
-							}
-						}
-						if(running == "U")
-						{
-							if(target.x == -1 && target.y == -1)//表明火花前进路上没有障碍物
-							{
-								if(fire_position.y > -30)
-								{
-									fire_position.y -= 22;
-								}
-								else
-								{
-									startfire = false;
-								}
-							}
-							else
-							{
-								if(fire_position.y > targety)
-								{
-									fire_position.y -= 22;
-								}
-								else if(fire_position.y == targety)//到达目标地点
-								{
-									new AePlayWave("explode.wav").start();
-									obstacle_label[target_ptr].setVisible(false);
-									obstacle[target.x].barrier[target.y].x = 1500;
-									obstacle[target.x].barrier[target.y].y = 1500;
-									fire_label.setVisible(false);
-									
-									startfire = false;
-								}
-							}
-						}
-						if(running == "D")
-						{
-							if(target.x == -1 && target.y == -1)//表明火花前进路上没有障碍物
-							{
-								if(fire_position.y < 550)//移到屏幕外即可
-								{
-									fire_position.y += 22;
-								}
-								else
-								{
-									startfire = false;
-								}
-							}
-							else
-							{
-								if(fire_position.y < targety)
-								{
-									fire_position.y += 22;
-								}
-								else if(fire_position.y == targety)//到达目标地点
-								{
-									new AePlayWave("explode.wav").start();
-									obstacle_label[target_ptr].setVisible(false);
-									obstacle[target.x].barrier[target.y].x = 1500;
-									obstacle[target.x].barrier[target.y].y = 1500;
-									fire_label.setVisible(false);
-									
-									startfire = false;
-								}
-							}
-						}
-						
-						fire_label.setBounds(fire_position.x, fire_position.y, 20, 20);
-						
-						repaint();
-					}
-				}
-			}
-		};
-		
-		run3.start();
-	}
+
 	
 	public void Reset(){
 		startfire = false;
