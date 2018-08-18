@@ -522,7 +522,7 @@ public class SnakeDemo extends JComponent{
 		boolean flag = true;
 		for(int i = 0; i < 5;i++)//每次产生5堵墙
 		{
-			length = rand.nextInt(4) + 5;//墙的长度从5到8随机
+			length = rand.nextInt(3) + 4;//墙的长度从4到6随机
 			brick_amount += length;
 			tag = rand.nextInt(2);//0和1
 			barrierx = (rand.nextInt(28) + 1) * 32 + 7;//每堵墙起始砖块的横坐标
