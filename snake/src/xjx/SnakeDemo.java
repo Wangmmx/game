@@ -95,8 +95,7 @@ public class SnakeDemo extends JComponent{
 	public static boolean If_remove = false;//是否移除网格线
 	
 	private boolean hit_flag = false;
-	
-	private Barrier[] obstacle = new Barrier[5];//每次产生5堵墙
+
 	public JLabel[] obstacle_label = new JLabel[40];//每堵墙的最大长度为8,5堵墙的最大长度为40
 	private ImageIcon brickIcon;
 	private int brick_amount = 0;
@@ -167,11 +166,7 @@ public class SnakeDemo extends JComponent{
 		Time.setForeground(Color.white);
 		Time2.setForeground(Color.white);    
 		Weapon.setForeground(Color.white); 
-		
-		for(int i = 0;i < 5;i++)
-		{
-			obstacle[i] = new Barrier(8);
-		}
+
 		
 	    //初始化头部坐标
 	    ProduceRandom();
@@ -358,23 +353,11 @@ public class SnakeDemo extends JComponent{
 			add(food_label);
 			food_label.setBounds(randomx, randomy, 29, 29);
 			ifcount = true;
-			
-			ProduceBarrier();
+
 			//初始化墙的位置
 			for(int i = 0; i < brick_amount;i++)//初始化添加砖块
 			{
 				add(obstacle_label[i]);
-			}
-			
-			int ptr = 0;
-			for(int i = 0; i < 5;i++)//每次5堵墙
-			{
-				for(int j = 0;j < obstacle[i].length;j++)
-				{
-					obstacle_label[ptr++].setBounds(obstacle[i].barrier[j].x,obstacle[i].barrier[j].y , 30, 30);
-//					System.out.println(obstacle[i].barrier[j].x + "   " + obstacle[i].barrier[j].y);
-				}
-//				System.out.println();
 			}
 		}
 		else
@@ -452,192 +435,11 @@ public class SnakeDemo extends JComponent{
 		Random rand = new Random();
 		randomx = (rand.nextInt(28) + 1) * 32 + 7 ;
 		randomy = (rand.nextInt(15) + 1) *32 + 12;
-		while(flag)
-		{
-			if(body_length == 0)
-			{
-				for(int i = 0;i < 5;i++)
-				{
-					for(int j = 0;j < obstacle[i].length; j++)
-					{
-						//保证身体节点，头部，食物都不能和砖块重合，而且保证网格空间能够容纳下这堵墙
-						if( (randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
-							(head.x == randomx  && head.y == randomy ) )
-						{
-							randomx = (rand.nextInt(28) + 1) * 32 + 7;
-							randomy = (rand.nextInt(15) + 1) *32 + 12;
-							flag = true;
-							break;
-						}
-						else
-						{
-							if(i == 4 && j == obstacle[i].length - 1)
-							{
-								flag = false;
-							}
-						}
-					}
-				}
-			}
-			else
-			{
-				for(int i = 0;i < 5;i++)
-				{
-					for(int k = 0;k < body_length; k++)
-					{
-						for(int j = 0;j < obstacle[i].length; j++)
-						{
-							//保证身体节点，头部，食物都不能和砖块重合，而且保证网格空间能够容纳下这堵墙
-							if( (body[k].x == randomx && body[k].y == randomy) || 
-								(randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
-								(head.x == randomx && head.y == randomx) )
-							{
-								randomx = (rand.nextInt(28) + 1) * 32 + 7;
-								randomy = (rand.nextInt(15) + 1) *32 + 12;
-								flag = true;
-								break;
-							}
-							else
-							{
-								if(i == 4 && k == body_length - 1 && j == obstacle[i].length - 1)//所有组合都判断完，确认此堵墙的位置合理
-								{
-									flag = false;
-								}
-							}
-						}
-					}
-				}
-			}
-			System.out.println("产生一个随机坐标成功");
-		}
+		System.out.println("产生一个随机坐标成功");
+
 	}
 	
-	public void ProduceBarrier(){
-		
-		brick_amount = 0;
-		Random rand = new Random();
-		int length;
-		int tag;//tag = 0表示墙的方向为横向，1表示墙的方向为纵向
-		int barrierx,barriery;
-		boolean flag = true;
-		for(int i = 0; i < 5;i++)//每次产生5堵墙
-		{
-			length = rand.nextInt(3) + 4;//墙的长度从4到6随机
-			brick_amount += length;
-			tag = rand.nextInt(2);//0和1
-			barrierx = (rand.nextInt(28) + 1) * 32 + 7;//每堵墙起始砖块的横坐标
-			barriery = (rand.nextInt(15) + 1) *32 + 12;//每堵墙起始砖块的纵坐标
-			
-			obstacle[i] = new Barrier(length);
-			
-			for(int j = 0;j < length;j++)
-			{
-				if(tag == 0)
-				{
-					obstacle[i].barrier[j].x = barrierx + j * 32;
-					obstacle[i].barrier[j].y = barriery;
-				}
-				else if(tag == 1)
-				{
-					obstacle[i].barrier[j].x = barrierx;
-					obstacle[i].barrier[j].y = barriery + j * 32;
-				}
-//				System.out.println(obstacle[i].barrier[j].x + "   " + obstacle[i].barrier[j].y);
-			}
-//			System.out.println();
-			
-			flag = true;
-			
-			while(flag)
-			{
-				if(body_length == 0)
-				{
-					for(int j = 0;j < length; j++)
-					{
-						//保证身体节点，头部，食物都不能和砖块重合，而且保证网格空间能够容纳下这堵墙
-						if( (randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
-							(head.x == obstacle[i].barrier[j].x && head.y == obstacle[i].barrier[j].y) ||
-							(tag == 0 && obstacle[i].barrier[0].x > 28 * 32 + 7 - (length - 1) * 32) ||
-							(tag == 1 && obstacle[i].barrier[0].y > 15 * 32 + 12 - (length - 1) * 32) )
-						{
-							barrierx = (rand.nextInt(28) + 1) * 32 + 7;
-							barriery = (rand.nextInt(15) + 1) *32 + 12;
-							for(int jj = 0;jj < length;jj++)
-							{
-								if(tag == 0)
-								{
-									obstacle[i].barrier[jj].x = barrierx + jj * 32;
-									obstacle[i].barrier[jj].y = barriery;
-								}
-								else if(tag == 1)
-								{
-									obstacle[i].barrier[jj].x = barrierx;
-									obstacle[i].barrier[jj].y = barriery + jj * 32;
-								}
-//								System.out.println(obstacle[i].barrier[jj].x + "   " + obstacle[i].barrier[jj].y);
-							}
-//							System.out.println();
-							
-							flag = true;
-							break;
-						}
-						else
-						{
-							if(j == length - 1)
-							{
-								flag = false;
-							}
-						}
-					}
-				}
-				else
-				{
-					for(int k = 0;k < body_length; k++)
-					{
-						for(int j = 0;j < length; j++)
-						{
-							//保证身体节点，头部，食物都不能和砖块重合，而且保证网格空间能够容纳下这堵墙
-							if( (body[k].x == obstacle[i].barrier[j].x && body[k].y == obstacle[i].barrier[j].y) || 
-								(randomx == obstacle[i].barrier[j].x && randomy == obstacle[i].barrier[j].y) ||
-								(head.x == obstacle[i].barrier[j].x && head.y == obstacle[i].barrier[j].y) ||
-								(tag == 0 && obstacle[i].barrier[0].x > 28 * 32 + 7 - (length - 1) * 32) ||
-								(tag == 1 && obstacle[i].barrier[0].y > 15 * 32 + 12 - (length - 1) * 32) )
-							{
-								barrierx = (rand.nextInt(28) + 1) * 32 + 7;
-								barriery = (rand.nextInt(15) + 1) *32 + 12;
-								for(int jj = 0;jj < length;jj++)
-								{
-									if(tag == 0)
-									{
-										obstacle[i].barrier[jj].x = barrierx + jj * 32;
-										obstacle[i].barrier[jj].y = barriery;
-									}
-									else if(tag == 1)
-									{
-										obstacle[i].barrier[jj].x = barrierx;
-										obstacle[i].barrier[jj].y = barriery + jj * 32;
-									}
-//									System.out.println(obstacle[i].barrier[jj].x + "   " + obstacle[i].barrier[jj].y);
-								}
-//								System.out.println();
-								
-								flag = true;
-								break;
-							}
-							else
-							{
-								if(k == body_length - 1 && j == length - 1)//所有组合都判断完，确认此堵墙的位置合理
-								{
-									flag = false;
-								}
-							}
-						}
-					}
-				}
-			}	
-		}	
-		System.out.println("产生墙成功");
-	}
+
 	
 	@SuppressWarnings("deprecation")
  	public void HitWall(){//判断是否撞墙
@@ -743,40 +545,7 @@ public class SnakeDemo extends JComponent{
 		}
 	}
 	
-	public void HitBarrier(){//判断是否撞障碍物了
-		boolean flag = false;
-		for(int i = 0;i < 5;i++)
-		{
-			for(int j = 0;j < obstacle[i].length;j++)
-			{
-				if(head.x == obstacle[i].barrier[j].x && head.y == obstacle[i].barrier[j].y)
-				{
-					hit_barrier = true;
-					
-					ifcount = false;
-					new AePlayWave("over.wav").start();
-					isrun = false;
-					int result=JOptionPane.showConfirmDialog(null, "Game over! Try again?", "Information", JOptionPane.YES_NO_OPTION);
-					if(result==JOptionPane.YES_NO_OPTION)
-					{
-						Reset();
-					}
-					else
-					{
-//						run.stop();
-						pause = true;
-					}
-					flag = true;
-					break;
-				}
-			}
-			
-			if(flag)
-			{
-				break;
-			}
-		}
-	}
+
 	
 	public boolean  EatFood(){
 		if(head.x == randomx && head.y == randomy)
@@ -879,7 +648,6 @@ public class SnakeDemo extends JComponent{
 						repaint();
 						
 						//刷新完判断是否撞墙和撞自己的身体
-						HitBarrier();
 						HitWall();
 						HitSelf();
 					}
@@ -909,21 +677,13 @@ public class SnakeDemo extends JComponent{
 							remove(obstacle_label[i]);
 						}
 						
-						ProduceBarrier();
+
 						for(int i = 0; i < brick_amount;i++)//重新添加砖块
 						{
 							add(obstacle_label[i]);
 						}
 						
-						int ptr = 0;
-						for(int i = 0; i < 5;i++)//每次5堵墙
-						{
-							for(int j = 0;j < obstacle[i].length;j++)
-							{
-								obstacle_label[ptr].setVisible(true);
-								obstacle_label[ptr++].setBounds(obstacle[i].barrier[j].x,obstacle[i].barrier[j].y , 30, 30);
-							}
-						}
+
 						
 						repaint();
 						
@@ -995,69 +755,6 @@ public class SnakeDemo extends JComponent{
 		System.out.println("Start again");
 	}
 	
-	public Tile Search(Tile here,String direction){//寻找从此处出发沿着direction方向上的离此处最近的砖块
-		Tile res = new Tile(-1,-1);
-		int gap = 10000;//大于网格中任意最小的两个网格之间的距离就行
-		for(int i = 0;i < 5;i++)
-		{
-			for(int j = 0;j < obstacle[i].length;j++)
-			{
-				if(direction == "L")
-				{
-					if(obstacle[i].barrier[j].y == here.y && obstacle[i].barrier[j].x < here.x)
-					{
-						if(gap > (here.x - obstacle[i].barrier[j].x))//刷新最小间隔
-						{
-							gap = here.x - obstacle[i].barrier[j].x;
-//							res = obstacle[i].barrier[j];
-							res.x = i;
-							res.y = j;
-						}
-					}
-				}
-				if(direction == "R")
-				{
-					if(obstacle[i].barrier[j].y == here.y && obstacle[i].barrier[j].x > here.x)
-					{
-						if(gap > (obstacle[i].barrier[j].x - here.x))//刷新最小间隔
-						{
-							gap = obstacle[i].barrier[j].x - here.x;
-//							res = obstacle[i].barrier[j];
-							res.x = i;
-							res.y = j;
-						}
-					}
-				}
-				if(direction == "U")
-				{
-					if(obstacle[i].barrier[j].x == here.x && obstacle[i].barrier[j].y < here.y)
-					{
-						if(gap > (here.y - obstacle[i].barrier[j].y))//刷新最小间隔
-						{
-							gap = here.y - obstacle[i].barrier[j].y;
-//							res = obstacle[i].barrier[j];
-							res.x = i;
-							res.y = j;
-						}
-					}
-				}
-				if(direction == "D")
-				{
-					if(obstacle[i].barrier[j].x == here.x && obstacle[i].barrier[j].y > here.y)
-					{
-						if(gap > (obstacle[i].barrier[j].y - here.y))//刷新最小间隔
-						{
-							gap = obstacle[i].barrier[j].y - here.y;
-//							res = obstacle[i].barrier[j];
-							res.x = i;
-							res.y = j;
-						}
-					}
-				}
-			}
-		}
-		return res;
-	}
 	
 	//倒计时类
 	class Countdown extends Thread{
