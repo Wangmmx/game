@@ -591,44 +591,44 @@ public class SnakeDemo extends JComponent{
 								body_length ++;
 								body[body_length-1].x = temp.x;
 								body[body_length-1].y = temp.y;
-//								switch (body_length) {
-//									case 1:
-//										snakebody = new ImageIcon("body/1.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 2:
-//										snakebody = new ImageIcon("body/2.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 3:
-//										snakebody = new ImageIcon("body/3.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 4:
-//										snakebody = new ImageIcon("body/4.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 5:
-//										snakebody = new ImageIcon("body/5.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 6:
-//										snakebody = new ImageIcon("body/6.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 7:
-//										snakebody = new ImageIcon("body/7.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									case 8:
-//										snakebody = new ImageIcon("body/8.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//									default:
-//										snakebody = new ImageIcon("body/9.png");
-//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-//										break;
-//								}
+								switch (body_length) {
+									case 1:
+										snakebody = new ImageIcon("body/1.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 2:
+										snakebody = new ImageIcon("body/2.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 3:
+										snakebody = new ImageIcon("body/3.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 4:
+										snakebody = new ImageIcon("body/4.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 5:
+										snakebody = new ImageIcon("body/5.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 6:
+										snakebody = new ImageIcon("body/6.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 7:
+										snakebody = new ImageIcon("body/7.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									case 8:
+										snakebody = new ImageIcon("body/8.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+									default:
+										snakebody = new ImageIcon("body/9.png");
+										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
+										break;
+								}
 								
 								add(body_label[body_length-1]);
 								
