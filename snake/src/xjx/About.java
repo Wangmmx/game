@@ -38,7 +38,6 @@ class ShadePanel extends JPanel {
         int height = getHeight();
         // 创建填充模式对象
         GradientPaint paint = new GradientPaint(0, 0, Color.GRAY, 0, height,Color.GRAY);//实现颜色渐变
-        //GradientPaint paint = new GradientPaint(0, 0, Color.red, 0, height,Color.blue);
         g.setPaint(paint);// 设置绘图对象的填充模式
         g.fillRect(0, 0, width, height);// 绘制矩形填充控件界面
     }
@@ -52,7 +51,7 @@ public class About extends JDialog {
 	private ImageIcon icon;
 	private JLabel label;
     public About() {
-        setTitle("关于");//设置窗体标题
+        setTitle("关于此游戏");//设置窗体标题
         Image img=Toolkit.getDefaultToolkit().getImage("ico.png");//窗口图标
         setIconImage(img);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -67,8 +66,7 @@ public class About extends JDialog {
         contentPane.add(shadePanel, BorderLayout.CENTER);// 添加面板到窗体内容面板
         shadePanel.setLayout(null);
         
-        JTextArea J1 = new JTextArea("版本：2017_07_20_4.0.0\n开发者：XJX\n开发语言：Java\n"
-    			+ "Email: thexjx@outlook.com");
+        JTextArea J1 = new JTextArea("制作者：王梦\n开发语言：Java\n");
         J1.setFocusable(false);
     	J1.setFont(f2);
     	J1.setEditable(false);
@@ -85,40 +83,12 @@ public class About extends JDialog {
     	p.setBounds(5, 130, 395, 1);
 	    p.setBorder(BorderFactory.createLineBorder(Color.black));
 	    shadePanel.add(p);
-	    
-	    JLabel J2 = new JLabel("欢迎访问我的主页:");
-	    J2.setBounds(10, 145, 200, 30);
-	    J2.setFont(f2);
-	    shadePanel.add(J2);
-	    
-    	JLabel MyGithub_Label = new JLabel("Github:");
-    	MyGithub_Label.setFont(f2);
-    	final JLabel MyGithub = new JLabel("https://github.com/JiaxinTse");
-    	MyGithub.setFont(f2);
-    	MyGithub.setBackground(Color.white);
-    	MyGithub.addMouseListener(new InternetMonitor());
-    	JLabel MyCnBlog_Label = new JLabel("博客园:");
-    	MyCnBlog_Label.setFont(f2);
-    	final JLabel MyCnBlog = new JLabel("http://www.cnblogs.com/journal-of-xjx");
-    	MyCnBlog.setFont(f2);
-    	MyCnBlog.addMouseListener(new InternetMonitor());
-    	JTextArea Copyright = new JTextArea("     	Copyright @XJX2017.\n   	  All rights reserved.");
-    	Copyright.setFocusable(false);
-    	Copyright.setOpaque(false);
-    	Copyright.setFont(f1);
-    	Copyright.setEditable(false);
-    	
-    	shadePanel.add(MyGithub_Label);
-    	MyGithub_Label.setBounds(10, 180, 400, 20);
-    	shadePanel.add(MyGithub);
-    	MyGithub.setBounds(10, 200, 400, 30);
-    	shadePanel.add(MyCnBlog_Label);
-    	MyCnBlog_Label.setBounds(10, 240, 400, 25);
-    	shadePanel.add(MyCnBlog);
-    	MyCnBlog.setBounds(10, 265, 400, 30);
-    	shadePanel.add(Copyright);
-    	Copyright.setBounds(10, 300, 400, 50);
-       
+
+		JLabel J2 = new JLabel("欢迎访问我的主页:");
+		J2.setBounds(10, 145, 200, 30);
+		J2.setFont(f2);
+		shadePanel.add(J2);
+
     	setVisible(true);
     }
     

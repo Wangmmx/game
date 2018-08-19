@@ -199,15 +199,7 @@ public class SnakeDemo extends JComponent{
 	    point_list[0] = 20;
 
 	    
-	    
-	    //初始化所有砖块
-	    brickIcon = new ImageIcon("brick.png");
-	    brickIcon.setImage(brickIcon.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
-		for(int i = 0; i < 40;i++)
-		{
-			obstacle_label[i] = new JLabel(brickIcon); 
-			obstacle_label[i].setOpaque(false);
-		}
+
     
 	    ProduceFood();
         food_label.setOpaque(false);

@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class MainWindow extends JFrame{
 	/**
-	 * 
+	 * 主界面  视觉界面
 	 */
 	private static final long serialVersionUID = -1877974685325498861L;
 	private Font f = new Font("微软雅黑",Font.PLAIN,13);
@@ -16,7 +16,7 @@ public class MainWindow extends JFrame{
 	public MainWindow(){
 		Image img = Toolkit.getDefaultToolkit().getImage("ico.png");//窗口图标
 		setIconImage(img);
-	    setTitle("Gift for KMD By WM");
+	    setTitle("Gift For 孔梦丹");
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    setSize(1000,552);
 	    setResizable(false);

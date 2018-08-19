@@ -8,12 +8,12 @@ public class Gift extends JDialog {
     private JScrollPane scroll;
 
     public Gift() {
-        setTitle("游戏规则说明");//设置窗体标题
+        setTitle("生日快乐");//设置窗体标题
         Image img=Toolkit.getDefaultToolkit().getImage("ico.png");//窗口图标
         setIconImage(img);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setModal(true);//设置为模态窗口
-        setSize(410,380);
+        setSize(410,280);
         setResizable(false);
         setLocationRelativeTo(null);
         contentPane = new JPanel();// 创建内容面板
@@ -29,13 +29,8 @@ public class Gift extends JDialog {
     	J1.setEditable(false);
     	J1.setOpaque(false);//背景透明
     	J1.setLineWrap(true);
-    	
-    	scroll = new JScrollPane(J1,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-    	scroll.setBorder(BorderFactory.createTitledBorder("How to play"));
-    	scroll.setOpaque(false);
-    	scroll.getViewport().setOpaque(false);//JScrollPane设置成透明需加上这一行
-    	shadePanel.add(scroll);
-    	scroll.setBounds(10, 10, 385, 330);
+
+
     	
     	setVisible(true);
     }
