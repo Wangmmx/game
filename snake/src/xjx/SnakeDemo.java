@@ -38,13 +38,10 @@ public class SnakeDemo extends JComponent{
 	
 	private JLabel label  = new JLabel("当前长度：");
 	private JLabel label2 = new JLabel("所花时间：");
-	private JLabel label3 = new JLabel("当前得分：");
 	private JLabel label4 = new JLabel("剩余时间：");
 	private JLabel Length = new JLabel("1");
-	private JLabel Score = new JLabel("0");
 	private JLabel Time = new JLabel("");
 	private JLabel Time2 = new JLabel("5");
-	private JLabel Weapon = new JLabel("0");
 	private Font f = new Font("微软雅黑",Font.PLAIN,15);
 	private JPanel p = new JPanel();
 	
@@ -79,7 +76,6 @@ public class SnakeDemo extends JComponent{
 	private int MI,MI2,MI3;
 	private int SS,SS2,SS3;
 
-	private int score = 0;
 	private int foodtag;
 	private int[] point_list = new int[6];
 	public ImageIcon snakehead;
@@ -92,11 +88,10 @@ public class SnakeDemo extends JComponent{
 	private int countsecond = 5;//每种食物产生5秒后消失或者换位置
 	private boolean ifcount = false;
 	
-	public static boolean If_remove = false;//是否移除网格线
+	public static boolean If_remove = true;//是否移除网格线
 	
 	private boolean hit_flag = false;
 
-	public JLabel[] obstacle_label = new JLabel[40];//每堵墙的最大长度为8,5堵墙的最大长度为40
 	private ImageIcon brickIcon;
 	private int brick_amount = 0;
 	private int brick_history_amount = 0;
@@ -139,13 +134,7 @@ public class SnakeDemo extends JComponent{
 	    label2.setFont(f);
 	    add(Time);
 	    Time.setBounds(910, 95, 80, 20);
-	    Time.setFont(f);    
-	    add(label3);
-	    label3.setBounds(910, 130, 80, 20);
-	    label3.setFont(f);
-	    add(Score);
-	    Score.setBounds(910, 155, 80, 20);
-	    Score.setFont(f);
+	    Time.setFont(f);
 	    add(p);
 	    p.setBounds(908, 200, 93, 1);
 	    p.setBorder(BorderFactory.createLineBorder(Color.white));
@@ -159,13 +148,10 @@ public class SnakeDemo extends JComponent{
 	    //字体颜色，为了便于分辨，设为白色
 	    label.setForeground(Color.white);
 	    label2.setForeground(Color.white);
-	    label3.setForeground(Color.white);
 	    label4.setForeground(Color.white);
 	    Length.setForeground(Color.white);
-		Score.setForeground(Color.white);
 		Time.setForeground(Color.white);
-		Time2.setForeground(Color.white);    
-		Weapon.setForeground(Color.white); 
+		Time2.setForeground(Color.white);
 
 		
 	    //初始化头部坐标
@@ -179,7 +165,7 @@ public class SnakeDemo extends JComponent{
         head_label.setOpaque(false);
         
         //初始化身体所有节点
-        snakebody = new ImageIcon("body/1.png");
+        snakebody = new ImageIcon("body/9.png");
 		snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
 		for(int i = 0; i < MAX_SIZE;i++)
 		{
@@ -192,17 +178,7 @@ public class SnakeDemo extends JComponent{
 		food = new ImageIcon("food/food.png");
 	    food.setImage(food.getImage().getScaledInstance(29,29,Image.SCALE_SMOOTH));//保持图片的清晰
 
-	    
 
-	    
-	    //初始化各食物对应的得分
-	    point_list[0] = 20;
-
-	    
-
-    
-	    ProduceFood();
-        food_label.setOpaque(false);
 		
 		//添加监听器
 		this.addKeyListener(new KeyAdapter() {
@@ -346,19 +322,17 @@ public class SnakeDemo extends JComponent{
 			food_label.setBounds(randomx, randomy, 29, 29);
 			ifcount = true;
 
-			//初始化墙的位置
-			for(int i = 0; i < brick_amount;i++)//初始化添加砖块
-			{
-				add(obstacle_label[i]);
-			}
 		}
 		else
 		{
 			//每次刷新身体
 			for(int i = 0;i < body_length;i++)
 			{
+
 				body_label[i].setBounds(body[i].x, body[i].y, 30, 30);
 			}
+
+
 			
 			if(EatFood())//被吃了重新产生食物
 			{
@@ -393,9 +367,6 @@ public class SnakeDemo extends JComponent{
 			for(int i = 1;i < 28;i++)
 			{
 				g.setStroke( new BasicStroke(1,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL));//实线
-//				g.setStroke( new BasicStroke(1f, BasicStroke.CAP_BUTT,
-//						BasicStroke.JOIN_ROUND, 3.5f, new float[] { 15, 10, },
-//						0f));//虚线
 				g.setColor(Color.white);
 				g.drawLine(5+i*32,9,5+i*32,490);
 				if(i < 15)
@@ -413,20 +384,18 @@ public class SnakeDemo extends JComponent{
 		Random rand = new Random();
 		double x;
 		x = rand.nextDouble();
-
 		if(x >= 0 && x <1)
 		{
 			food_label = new JLabel(food);
-			foodtag = 1;
 		}
-
 	}
-	
+
+
 	public void ProduceRandom(){
 		boolean flag = true;
 		Random rand = new Random();
-		randomx = (rand.nextInt(28) + 1) * 32 + 7 ;
-		randomy = (rand.nextInt(15) + 1) *32 + 12;
+		randomx = (rand.nextInt(27) + 1) * 32 + 7 ;
+		randomy = (rand.nextInt(14) + 1) *32 + 12;
 		System.out.println("产生一个随机坐标成功");
 
 	}
@@ -449,7 +418,6 @@ public class SnakeDemo extends JComponent{
 				}
 				else
 				{
-//					run.stop();
 					pause = true;
 				}		
 			}
@@ -468,7 +436,6 @@ public class SnakeDemo extends JComponent{
 				}
 				else
 				{
-//					run.stop();
 					pause = true;
 				}
 			}
@@ -487,7 +454,6 @@ public class SnakeDemo extends JComponent{
 				}
 				else
 				{
-//					run.stop();
 					pause = true;
 				}
 			}
@@ -506,7 +472,6 @@ public class SnakeDemo extends JComponent{
 				}
 				else
 				{
-//					run.stop();
 					pause = true;
 				}
 			}
@@ -626,13 +591,50 @@ public class SnakeDemo extends JComponent{
 								body_length ++;
 								body[body_length-1].x = temp.x;
 								body[body_length-1].y = temp.y;
+//								switch (body_length) {
+//									case 1:
+//										snakebody = new ImageIcon("body/1.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 2:
+//										snakebody = new ImageIcon("body/2.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 3:
+//										snakebody = new ImageIcon("body/3.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 4:
+//										snakebody = new ImageIcon("body/4.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 5:
+//										snakebody = new ImageIcon("body/5.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 6:
+//										snakebody = new ImageIcon("body/6.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 7:
+//										snakebody = new ImageIcon("body/7.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									case 8:
+//										snakebody = new ImageIcon("body/8.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//									default:
+//										snakebody = new ImageIcon("body/9.png");
+//										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+//										break;
+//								}
 								
 								add(body_label[body_length-1]);
 								
 								Length.setText("" + (body_length+1) );//刷新长度
-								score += point_list[foodtag];
 
-								Score.setText("" + score);//刷新得分
+
 								new AePlayWave("eat.wav").start();
 							}
 						}
@@ -649,46 +651,7 @@ public class SnakeDemo extends JComponent{
 		
 		run.start();
 	}
-	
-	public void Thread2(){
-		run2 = new Thread() {
-			public void run() {
-				while (true) 
-				{
-					try {
-						Thread.sleep(20000);//每隔20秒刷新一次
-					} catch (InterruptedException ex) {
-						ex.printStackTrace();
-					}
-					
-					if(isrun && !pause)
-					{	
-						brick_history_amount = brick_amount;//把上次的砖块数量赋给brick_history_amount
-						for(int i = 0; i < brick_history_amount;i++)//移除之前的所有砖块
-						{
-							remove(obstacle_label[i]);
-						}
-						
 
-						for(int i = 0; i < brick_amount;i++)//重新添加砖块
-						{
-							add(obstacle_label[i]);
-						}
-						
-
-						
-						repaint();
-						
-						//刷新完判断是否撞墙和撞自己的身体
-						HitWall();
-						HitSelf();
-					}
-				}
-			}
-		};
-		
-		run2.start();
-	}
 
 	
 	public void Reset(){
@@ -696,8 +659,6 @@ public class SnakeDemo extends JComponent{
 		hit_barrier = false;
 		hit_flag = false;
 		remove(food_label);//去掉被吃掉的食物
-		score = 0;
-		Score.setText("0");
 		//初始化头部坐标
 	    ProduceRandom();
 	    
@@ -710,7 +671,7 @@ public class SnakeDemo extends JComponent{
 			body[jj].y = 0;
 		}
 	    
-	    for(int i = 0;i < 40;i++)
+	    for(int i = 0;i < 30;i++)
 	    {
 	    	body_label[i].setVisible(true);
 	    }
@@ -720,10 +681,7 @@ public class SnakeDemo extends JComponent{
 	    	remove(body_label[k]);
 	    }
 	    
-	    for(int k = 0;k < brick_amount;k++)
-	    {
-	    	remove(obstacle_label[k]);
-	    }
+
 	    
 		hour =0;
 		min =0;
@@ -742,7 +700,7 @@ public class SnakeDemo extends JComponent{
 		countsecond = 5;
 		Time2.setText("5");
 		ifcount = true;
-		Weapon.setText("0");
+
 		
 		System.out.println("Start again");
 	}
@@ -770,10 +728,6 @@ public class SnakeDemo extends JComponent{
 			    		countsecond = 5;
 			    		Time2.setText("5");
 			    		remove(food_label);
-			    		if(foodtag == 1 || foodtag == 5)//分值最高的两种食物在规定时间内没被吃掉就消失
-			    		{
-			    			ProduceFood();
-			    		}
 			    		ProduceRandom();
 			    		add(food_label);
 			    		ifcount = true;

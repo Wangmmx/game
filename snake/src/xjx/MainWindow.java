@@ -56,7 +56,6 @@ public class MainWindow extends JFrame{
 
 	    SnakeDemo snake = new SnakeDemo();
 		snake.Thread();
-		snake.Thread2();
 		snake.setOpaque(false);
 		imagePanel.add(snake, BorderLayout.CENTER);
 
