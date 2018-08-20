@@ -13,7 +13,7 @@ public class Gift extends JDialog {
         setIconImage(img);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setModal(true);//设置为模态窗口
-        setSize(410,280);
+        setSize(410,380);
         setResizable(false);
         setLocationRelativeTo(null);
         contentPane = new JPanel();// 创建内容面板
@@ -30,7 +30,12 @@ public class Gift extends JDialog {
     	J1.setOpaque(false);//背景透明
     	J1.setLineWrap(true);
 
-
+        scroll = new JScrollPane(J1,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        scroll.setBorder(BorderFactory.createTitledBorder("送给你"));
+        scroll.setOpaque(false);
+        scroll.getViewport().setOpaque(false);//JScrollPane设置成透明需加上这一行
+        shadePanel.add(scroll);
+        scroll.setBounds(10, 10, 385, 330);
     	
     	setVisible(true);
     }

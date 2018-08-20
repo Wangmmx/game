@@ -43,39 +43,37 @@
       <file leaf-file-name="About.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xjx/About.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-              <folding>
-                <marker date="1534732519312" expanded="true" signature="2925:2954" ph="{...}" />
-                <marker date="1534732519312" expanded="true" signature="2925:3024" ph="{...}" />
-                <marker date="1534732519312" expanded="false" signature="3002:3007" ph=" { " />
-                <marker date="1534732519312" expanded="false" signature="3019:3022" ph=" }" />
-                <marker date="1534732519312" expanded="true" signature="3068:3836" ph="{...}" />
-                <marker date="1534732519312" expanded="true" signature="3109:3574" ph="{...}" />
-                <marker date="1534732519312" expanded="true" signature="3614:3704" ph="{...}" />
-                <marker date="1534732519312" expanded="true" signature="3743:3834" ph="{...}" />
-              </folding>
+            <state relative-caret-position="424">
+              <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gift.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gift.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xjx/Gift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <marker date="1534732519315" expanded="false" signature="1196:1201" ph=" { " />
-                <marker date="1534732519315" expanded="false" signature="1212:1215" ph=" }" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SnakeDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Help.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xjx/Help.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SnakeDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xjx/SnakeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="1266">
               <caret line="171" column="51" lean-forward="true" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -138,10 +136,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/xjx/package-info.java" />
         <option value="$PROJECT_DIR$/src/xjx/Help.java" />
-        <option value="$PROJECT_DIR$/src/xjx/About.java" />
-        <option value="$PROJECT_DIR$/src/xjx/Gift.java" />
         <option value="$PROJECT_DIR$/src/xjx/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/xjx/SnakeDemo.java" />
+        <option value="$PROJECT_DIR$/src/xjx/About.java" />
+        <option value="$PROJECT_DIR$/src/xjx/Gift.java" />
       </list>
     </option>
   </component>
@@ -657,7 +655,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39864000" />
+    <option name="totallyTimeSpent" value="40158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="54" width="1802" height="927" extended-state="0" />
@@ -934,30 +932,6 @@
     <entry file="jar://D:/JDK/src.zip!/java/awt/GradientPaint.java" />
     <entry file="jar://D:/JDK/src.zip!/java/awt/Component.java" />
     <entry file="jar://D:/JDK/src.zip!/java/util/Random.java" />
-    <entry file="file://$PROJECT_DIR$/src/xjx/Help.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xjx/About.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-          <folding>
-            <marker date="1534732519312" expanded="true" signature="2925:2954" ph="{...}" />
-            <marker date="1534732519312" expanded="true" signature="2925:3024" ph="{...}" />
-            <marker date="1534732519312" expanded="false" signature="3002:3007" ph=" { " />
-            <marker date="1534732519312" expanded="false" signature="3019:3022" ph=" }" />
-            <marker date="1534732519312" expanded="true" signature="3068:3836" ph="{...}" />
-            <marker date="1534732519312" expanded="true" signature="3109:3574" ph="{...}" />
-            <marker date="1534732519312" expanded="true" signature="3614:3704" ph="{...}" />
-            <marker date="1534732519312" expanded="true" signature="3743:3834" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brick.png" />
     <entry file="file://$PROJECT_DIR$/title.png" />
     <entry file="file://$PROJECT_DIR$/food/food1.png" />
@@ -993,20 +967,25 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xjx/Gift.java">
+    <entry file="file://$PROJECT_DIR$/src/xjx/About.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1534732519315" expanded="false" signature="1196:1201" ph=" { " />
-            <marker date="1534732519315" expanded="false" signature="1212:1215" ph=" }" />
-          </folding>
+        <state relative-caret-position="424">
+          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xjx/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xjx/SnakeDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="1266">
           <caret line="171" column="51" lean-forward="true" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1033,6 +1012,14 @@
             <element signature="class#AePlayWave#0" expanded="false" />
             <element signature="method#run#0;class#AePlayWave#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xjx/Gift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

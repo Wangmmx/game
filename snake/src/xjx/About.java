@@ -84,7 +84,7 @@ public class About extends JDialog {
 	    p.setBorder(BorderFactory.createLineBorder(Color.black));
 	    shadePanel.add(p);
 
-		JLabel J2 = new JLabel("欢迎访问我的主页:");
+		JLabel J2 = new JLabel("还有很多要改进的嘿嘿");
 		J2.setBounds(10, 145, 200, 30);
 		J2.setFont(f2);
 		shadePanel.add(J2);
