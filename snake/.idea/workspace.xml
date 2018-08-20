@@ -14,18 +14,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xjx/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2256#2257#0" expanded="true" />
-                <element signature="e#2279#2280#0" expanded="true" />
+                <marker date="1534732519318" expanded="true" signature="108:116" ph="/**...*/" />
+                <marker date="1534732519318" expanded="true" signature="1705:2213" ph="{...}" />
+                <marker date="1534732519318" expanded="true" signature="1828:1926" ph="{...}" />
+                <marker date="1534732519318" expanded="false" signature="1881:1893" ph=" { " />
+                <marker date="1534732519318" expanded="false" signature="1905:1916" ph=" }" />
+                <marker date="1534732519318" expanded="true" signature="1974:2071" ph="{...}" />
+                <marker date="1534732519318" expanded="false" signature="2027:2039" ph=" { " />
+                <marker date="1534732519318" expanded="false" signature="2050:2061" ph=" }" />
+                <marker date="1534732519318" expanded="true" signature="2119:2185" ph="{...}" />
+                <marker date="1534732519318" expanded="true" signature="2166:2181" ph="{...}" />
+                <marker date="1534732519318" expanded="false" signature="2255:2260" ph=" { " />
+                <marker date="1534732519318" expanded="false" signature="2277:2280" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -34,9 +43,18 @@
       <file leaf-file-name="About.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xjx/About.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
-              <folding />
+            <state relative-caret-position="1140">
+              <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+              <folding>
+                <marker date="1534732519312" expanded="true" signature="2925:2954" ph="{...}" />
+                <marker date="1534732519312" expanded="true" signature="2925:3024" ph="{...}" />
+                <marker date="1534732519312" expanded="false" signature="3002:3007" ph=" { " />
+                <marker date="1534732519312" expanded="false" signature="3019:3022" ph=" }" />
+                <marker date="1534732519312" expanded="true" signature="3068:3836" ph="{...}" />
+                <marker date="1534732519312" expanded="true" signature="3109:3574" ph="{...}" />
+                <marker date="1534732519312" expanded="true" signature="3614:3704" ph="{...}" />
+                <marker date="1534732519312" expanded="true" signature="3743:3834" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,9 +62,12 @@
       <file leaf-file-name="Gift.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xjx/Gift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="589">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <marker date="1534732519315" expanded="false" signature="1196:1201" ph=" { " />
+                <marker date="1534732519315" expanded="false" signature="1212:1215" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,10 +75,32 @@
       <file leaf-file-name="SnakeDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xjx/SnakeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="665" column="16" lean-forward="false" selection-start-line="665" selection-start-column="16" selection-end-line="665" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="171" column="51" lean-forward="true" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Tile#0;class#Tile#0" expanded="false" />
+                <element signature="e#4707#5825#0" expanded="true" />
+                <element signature="e#5824#5825#0" expanded="true" />
+                <element signature="e#5853#7074#0" expanded="true" />
+                <element signature="e#7073#7074#0" expanded="true" />
+                <element signature="e#7102#7946#0" expanded="true" />
+                <element signature="e#7945#7946#0" expanded="true" />
+                <element signature="method#ProduceFood#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="method#ProduceRandom#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="e#10034#10066#0" expanded="true" />
+                <element signature="method#HitWall#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="e#11609#11641#0" expanded="true" />
+                <element signature="method#HitSelf#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="method#Thread#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="e#12361#13966#0" expanded="true" />
+                <element signature="e#13965#13966#0" expanded="true" />
+                <element signature="method#Reset#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="class#Countdown#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="e#14955#14987#0" expanded="true" />
+                <element signature="class#Timer#0;class#SnakeDemo#0" expanded="false" />
+                <element signature="class#AePlayWave#0" expanded="false" />
+                <element signature="method#run#0;class#AePlayWave#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,10 +152,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="140" />
+    <option name="y" value="54" />
+    <option name="width" value="1802" />
+    <option name="height" value="927" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -129,52 +172,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="body" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+              <item name="body" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xjx" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,12 +240,116 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="MainWindow" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="File_4th_version" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -272,29 +404,6 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -443,36 +552,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -535,54 +614,9 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
       <envs />
       <method />
     </configuration>
@@ -599,24 +633,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MainWindow" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="File_4th_version" />
-      <envs />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -641,15 +657,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39383000" />
+    <option name="totallyTimeSpent" value="39864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="140" y="54" width="1802" height="927" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -657,17 +671,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18003273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14155844" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06807867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14638346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -697,12 +708,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31914893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08850227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -724,8 +733,18 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
+            <marker date="1534732519318" expanded="true" signature="108:116" ph="/**...*/" />
+            <marker date="1534732519318" expanded="true" signature="1705:2213" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="1828:1926" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="1881:1893" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="1905:1916" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="1974:2071" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2027:2039" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2050:2061" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="2119:2185" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="2166:2181" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2255:2260" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2277:2280" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -736,6 +755,28 @@
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Tile#0;class#Tile#0" expanded="false" />
+            <element signature="e#4707#5825#0" expanded="true" />
+            <element signature="e#5824#5825#0" expanded="true" />
+            <element signature="e#5853#7074#0" expanded="true" />
+            <element signature="e#7073#7074#0" expanded="true" />
+            <element signature="e#7102#7946#0" expanded="true" />
+            <element signature="e#7945#7946#0" expanded="true" />
+            <element signature="method#ProduceFood#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#ProduceRandom#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#10034#10066#0" expanded="true" />
+            <element signature="method#HitWall#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#11609#11641#0" expanded="true" />
+            <element signature="method#HitSelf#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#Thread#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#12361#13966#0" expanded="true" />
+            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="method#Reset#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#Countdown#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#14955#14987#0" expanded="true" />
+            <element signature="class#Timer#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#AePlayWave#0" expanded="false" />
+            <element signature="method#run#0;class#AePlayWave#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,8 +788,18 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
+            <marker date="1534732519318" expanded="true" signature="108:116" ph="/**...*/" />
+            <marker date="1534732519318" expanded="true" signature="1705:2213" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="1828:1926" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="1881:1893" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="1905:1916" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="1974:2071" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2027:2039" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2050:2061" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="2119:2185" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="2166:2181" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2255:2260" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2277:2280" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -759,6 +810,28 @@
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Tile#0;class#Tile#0" expanded="false" />
+            <element signature="e#4707#5825#0" expanded="true" />
+            <element signature="e#5824#5825#0" expanded="true" />
+            <element signature="e#5853#7074#0" expanded="true" />
+            <element signature="e#7073#7074#0" expanded="true" />
+            <element signature="e#7102#7946#0" expanded="true" />
+            <element signature="e#7945#7946#0" expanded="true" />
+            <element signature="method#ProduceFood#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#ProduceRandom#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#10034#10066#0" expanded="true" />
+            <element signature="method#HitWall#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#11609#11641#0" expanded="true" />
+            <element signature="method#HitSelf#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#Thread#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#12361#13966#0" expanded="true" />
+            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="method#Reset#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#Countdown#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#14955#14987#0" expanded="true" />
+            <element signature="class#Timer#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#AePlayWave#0" expanded="false" />
+            <element signature="method#run#0;class#AePlayWave#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,8 +843,18 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
+            <marker date="1534732519318" expanded="true" signature="108:116" ph="/**...*/" />
+            <marker date="1534732519318" expanded="true" signature="1705:2213" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="1828:1926" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="1881:1893" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="1905:1916" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="1974:2071" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2027:2039" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2050:2061" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="2119:2185" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="2166:2181" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2255:2260" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2277:2280" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -782,6 +865,28 @@
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Tile#0;class#Tile#0" expanded="false" />
+            <element signature="e#4707#5825#0" expanded="true" />
+            <element signature="e#5824#5825#0" expanded="true" />
+            <element signature="e#5853#7074#0" expanded="true" />
+            <element signature="e#7073#7074#0" expanded="true" />
+            <element signature="e#7102#7946#0" expanded="true" />
+            <element signature="e#7945#7946#0" expanded="true" />
+            <element signature="method#ProduceFood#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#ProduceRandom#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#10034#10066#0" expanded="true" />
+            <element signature="method#HitWall#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#11609#11641#0" expanded="true" />
+            <element signature="method#HitSelf#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#Thread#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#12361#13966#0" expanded="true" />
+            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="method#Reset#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#Countdown#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#14955#14987#0" expanded="true" />
+            <element signature="class#Timer#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#AePlayWave#0" expanded="false" />
+            <element signature="method#run#0;class#AePlayWave#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,59 +931,36 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/jre/lib/rt.jar!/java/awt/event/InputEvent.class" />
     <entry file="file://$PROJECT_DIR$/body/body.png" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/jre/lib/rt.jar!/java/awt/Color.class" />
-    <entry file="jar://D:/JDK/src.zip!/java/awt/GradientPaint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="142" column="11" lean-forward="false" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="2259" column="16" lean-forward="false" selection-start-line="2259" selection-start-column="16" selection-end-line="2259" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="385" column="15" lean-forward="false" selection-start-line="385" selection-start-column="15" selection-end-line="385" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/JDK/src.zip!/java/awt/GradientPaint.java" />
+    <entry file="jar://D:/JDK/src.zip!/java/awt/Component.java" />
+    <entry file="jar://D:/JDK/src.zip!/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/xjx/Help.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
           <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xjx/About.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
-          <folding />
+        <state relative-caret-position="1140">
+          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <marker date="1534732519312" expanded="true" signature="2925:2954" ph="{...}" />
+            <marker date="1534732519312" expanded="true" signature="2925:3024" ph="{...}" />
+            <marker date="1534732519312" expanded="false" signature="3002:3007" ph=" { " />
+            <marker date="1534732519312" expanded="false" signature="3019:3022" ph=" }" />
+            <marker date="1534732519312" expanded="true" signature="3068:3836" ph="{...}" />
+            <marker date="1534732519312" expanded="true" signature="3109:3574" ph="{...}" />
+            <marker date="1534732519312" expanded="true" signature="3614:3704" ph="{...}" />
+            <marker date="1534732519312" expanded="true" signature="3743:3834" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brick.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/title.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/food/food1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/brick.png" />
+    <entry file="file://$PROJECT_DIR$/title.png" />
+    <entry file="file://$PROJECT_DIR$/food/food1.png" />
     <entry file="file://$PROJECT_DIR$/body/1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -886,12 +968,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xjx/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
+            <marker date="1534732519318" expanded="true" signature="108:116" ph="/**...*/" />
+            <marker date="1534732519318" expanded="true" signature="1705:2213" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="1828:1926" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="1881:1893" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="1905:1916" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="1974:2071" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2027:2039" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2050:2061" ph=" }" />
+            <marker date="1534732519318" expanded="true" signature="2119:2185" ph="{...}" />
+            <marker date="1534732519318" expanded="true" signature="2166:2181" ph="{...}" />
+            <marker date="1534732519318" expanded="false" signature="2255:2260" ph=" { " />
+            <marker date="1534732519318" expanded="false" signature="2277:2280" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -903,18 +995,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xjx/Gift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="589">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1534732519315" expanded="false" signature="1196:1201" ph=" { " />
+            <marker date="1534732519315" expanded="false" signature="1212:1215" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xjx/SnakeDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="665" column="16" lean-forward="false" selection-start-line="665" selection-start-column="16" selection-end-line="665" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="171" column="51" lean-forward="true" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Tile#0;class#Tile#0" expanded="false" />
+            <element signature="e#4707#5825#0" expanded="true" />
+            <element signature="e#5824#5825#0" expanded="true" />
+            <element signature="e#5853#7074#0" expanded="true" />
+            <element signature="e#7073#7074#0" expanded="true" />
+            <element signature="e#7102#7946#0" expanded="true" />
+            <element signature="e#7945#7946#0" expanded="true" />
+            <element signature="method#ProduceFood#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#ProduceRandom#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#10034#10066#0" expanded="true" />
+            <element signature="method#HitWall#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#11609#11641#0" expanded="true" />
+            <element signature="method#HitSelf#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="method#Thread#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#12361#13966#0" expanded="true" />
+            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="method#Reset#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#Countdown#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="e#14955#14987#0" expanded="true" />
+            <element signature="class#Timer#0;class#SnakeDemo#0" expanded="false" />
+            <element signature="class#AePlayWave#0" expanded="false" />
+            <element signature="method#run#0;class#AePlayWave#0" expanded="false" />
           </folding>
         </state>
       </provider>

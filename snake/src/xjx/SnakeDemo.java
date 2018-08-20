@@ -165,7 +165,7 @@ public class SnakeDemo extends JComponent{
 			if (i == 0 || i > 8) {
 				snakebody = new ImageIcon("body/9.png");
 			} else {
-				snakebody = new ImageIcon("body/"+i+".png\\");
+				snakebody = new ImageIcon("body/"+ i + ".png\\");
 			}
 			snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
 			body[i] = new Tile(0,0);
