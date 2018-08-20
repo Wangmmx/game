@@ -92,15 +92,9 @@ public class SnakeDemo extends JComponent{
 	
 	private boolean hit_flag = false;
 
-	private ImageIcon brickIcon;
-	private int brick_amount = 0;
-	private int brick_history_amount = 0;
 	private boolean hit_barrier = false; 
 
-	private JLabel fire_label;
-	private Tile fire_position = new Tile(0,0);
 	private Tile target;
-	private boolean startfire = false;
 	private String running;
 	private int targetx,targety;
 	private int target_ptr;
@@ -297,8 +291,6 @@ public class SnakeDemo extends JComponent{
 		setFocusable(true);
 	}
 
-
-	
 	public void paintComponent(Graphics g1){
 		super.paintComponent(g1);
 		Graphics2D g = (Graphics2D) g1;
@@ -390,7 +382,6 @@ public class SnakeDemo extends JComponent{
 		}
 	}
 
-
 	public void ProduceRandom(){
 		boolean flag = true;
 		Random rand = new Random();
@@ -399,9 +390,7 @@ public class SnakeDemo extends JComponent{
 		System.out.println("产生一个随机坐标成功");
 
 	}
-	
 
-	
 	@SuppressWarnings("deprecation")
  	public void HitWall(){//判断是否撞墙
 		if(current_direction == "L")
@@ -502,8 +491,6 @@ public class SnakeDemo extends JComponent{
 		}
 	}
 	
-
-	
 	public boolean  EatFood(){
 		if(head.x == randomx && head.y == randomy)
 		{
@@ -591,45 +578,6 @@ public class SnakeDemo extends JComponent{
 								body_length ++;
 								body[body_length-1].x = temp.x;
 								body[body_length-1].y = temp.y;
-								switch (body_length) {
-									case 1:
-										snakebody = new ImageIcon("body/1.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 2:
-										snakebody = new ImageIcon("body/2.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 3:
-										snakebody = new ImageIcon("body/3.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 4:
-										snakebody = new ImageIcon("body/4.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 5:
-										snakebody = new ImageIcon("body/5.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 6:
-										snakebody = new ImageIcon("body/6.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 7:
-										snakebody = new ImageIcon("body/7.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									case 8:
-										snakebody = new ImageIcon("body/8.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-									default:
-										snakebody = new ImageIcon("body/9.png");
-										snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));
-										break;
-								}
-								
 								add(body_label[body_length-1]);
 								
 								Length.setText("" + (body_length+1) );//刷新长度
@@ -640,7 +588,6 @@ public class SnakeDemo extends JComponent{
 						}
 						
 						repaint();
-						
 						//刷新完判断是否撞墙和撞自己的身体
 						HitWall();
 						HitSelf();
@@ -652,10 +599,7 @@ public class SnakeDemo extends JComponent{
 		run.start();
 	}
 
-
-	
 	public void Reset(){
-		startfire = false;
 		hit_barrier = false;
 		hit_flag = false;
 		remove(food_label);//去掉被吃掉的食物
@@ -704,7 +648,6 @@ public class SnakeDemo extends JComponent{
 		
 		System.out.println("Start again");
 	}
-	
 	
 	//倒计时类
 	class Countdown extends Thread{
@@ -793,7 +736,9 @@ public class SnakeDemo extends JComponent{
 		        //在窗体上设置显示时间
 		        Time.setText(strTime);
 		    }
-		}	
+		}
+
+		
 }
 
 class AePlayWave extends Thread { 	 
