@@ -159,10 +159,15 @@ public class SnakeDemo extends JComponent{
         head_label.setOpaque(false);
         
         //初始化身体所有节点
-        snakebody = new ImageIcon("body/9.png");
-		snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
+
 		for(int i = 0; i < MAX_SIZE;i++)
 		{
+			if (i == 0 || i > 8) {
+				snakebody = new ImageIcon("body/9.png");
+			} else {
+				snakebody = new ImageIcon("body/"+i+".png\\");
+			}
+			snakebody.setImage(snakebody.getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH));//保持图片的清晰
 			body[i] = new Tile(0,0);
 			body_label[i] = new JLabel(snakebody); 
 			body_label[i].setOpaque(false);
@@ -738,7 +743,7 @@ public class SnakeDemo extends JComponent{
 		    }
 		}
 
-		
+
 }
 
 class AePlayWave extends Thread { 	 
