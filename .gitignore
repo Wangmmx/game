@@ -1,0 +1,12 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+.idea/
+*.iml
+.idea/workspace.xml
+.DS_Store
+
+*out/
