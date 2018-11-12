@@ -1,9 +1,9 @@
-package com.wmmx.gui;
+package com.wmmx.gui.gui;
 
 import java.awt.*;
 import java.awt.event.*;
 
-public class gui {
+public class GUI {
     public static void main(String[] args) {
         Frame frame = new Frame("第一个窗口");
         frame.setSize(400,600);
